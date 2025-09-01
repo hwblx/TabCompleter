@@ -19,14 +19,15 @@ No dependencies other than Python's standard library.
 from completer import Completer
 
 # Initialize the completer
-c = Completer()
-c.set_keywords(['apple', 'banana', 'cherry'])
+comp = Completer()
+comp.set_keywords(['apple', 'banana', 'cherry'])
+comp.init_readline()
+
+# Setting keywords dynamically
+comp.set_keywords(['bush', 'flower', 'tree'])
 
 # (Optional) Set fuzzy match cutoff (0.0 - 1.0)
-c.set_cutoff(0.7)
-
-# Set up readline
-c.init_readline()
+comp.set_cutoff(0.7)
 
 # (Optional) Pre-fill the input line
 Completer.set_readline_hook('apple')
