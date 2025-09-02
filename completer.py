@@ -20,7 +20,7 @@ class Completer:
             return matches[state]
         except IndexError:
             return None
-
+ 
     def init_readline(self, delims=' ";:=', parse=('tab: menu-complete',)):
         readline.set_completer(self.completer)
         readline.set_completer_delims(delims)
