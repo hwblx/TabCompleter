@@ -2,12 +2,14 @@
 
 A minimal, dynamic tab completer for Python CLI tools using the `readline` module. Supports keyword-based completion with fuzzy matching via `difflib.get_close_matches()`.
 
+**Tested on Python 3.10 and 3.12, not running on version 3.13**
+
 ## Features
 
 - Dynamic keyword list updates
 - Adjustable fuzzy match sensitivity (`cutoff`)
 - Readline integration with custom delimiters and bindings
-- Optional readline startup hook for pre-filling input
+- Optional readline startup hook for pre-filling input 
 
 ## Installation
 
@@ -31,4 +33,4 @@ comp.set_cutoff(0.7)
 
 # (Optional) Pre-fill the input line
 Completer.set_readline_hook('fruit')
-
+```
