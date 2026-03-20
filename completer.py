@@ -1,7 +1,6 @@
-# Copyright (C) 2025 hwblx
-
 import readline
 from difflib import get_close_matches
+
 
 class Completer:
     def __init__(self, cutoff=0.6):
