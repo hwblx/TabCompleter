@@ -12,7 +12,7 @@ jobs:
     # Matrix lets you run this job for multiple Python versions
     strategy:
       matrix:
-        python-version: [3.10, 3.11, 3.12, 3.13]
+        python-version: [3.11, 3.12, 3.13]
 
     steps:
       # Checkout the repo
