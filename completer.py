@@ -34,3 +34,13 @@ class Completer:
     def set_readline_hook(text):
         readline.set_startup_hook(lambda: readline.insert_text(text))
 
+
+if __name__ == '__main__':
+    print('Testing completer')
+    comp = Completer()
+    comp.set_keywords(['apple', 'banana', 'cherry'])
+    comp.init_readline()
+    Completer.set_readline_hook("fruit ['apple', 'banana', 'cherry']: ")
+
+    while True:
+        test = input()

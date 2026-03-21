@@ -2,7 +2,8 @@
 
 A minimal, dynamic tab completer for Python CLI tools using the `readline` module. Supports keyword-based completion with fuzzy matching via `difflib.get_close_matches()`.
 
-**Tested on Python 3.10 and 3.12, not running on version 3.13**
+Tested on Python 3.10, 3.11 and 3.12.
+Not running on versions >=3.13, probably due to changes in the readline standard library module.**
 
 ## Features
 
